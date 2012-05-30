@@ -1,0 +1,58 @@
+Solveet: http://www.solveet.com/exercises/Kata-Simple-List/15
+
+Tal vez las listas simples de datos tengan más juego de lo que podrías pensar. Vamos a experiemntar con un poco de procesamiento básico de listas.
+
+Las listas son una de las primeras estructuras de datos que aprendemos como programadores. Pero el que estamos familiarizadas con ellas no significa que no podamos aprender un poco con ellas. En esta kata vamos a codificar hasta 3 implementaciones de una lista que tiene la siguiente interfaz básica:
+Una lista formada por nodos. Cada noco tiene un valor de tipo string.
+Los nuevos nodos se añaden al final de la lista.
+Podrás preguntarle a la lista si contiene un string concreto. Si es así, devolverá el nodo que contiene el string.
+Podrás eliminar un nodo cualquiera de la lista.
+Podrás preguntarle a la lista que devuelva un array con todos los valores de sus nodos.
+
+Aquí tienes un conjunto básico de pruebas unitarias para ilustrar su comportamiento:
+list = List.new
+assert_nil(list.find("fred"))
+
+list.add("fred")
+assert_equal("fred", list.find("fred").value())
+assert_nil(list.find("wilma"))
+
+list.add("wilma")
+assert_equal("fred",  list.find("fred").value())
+assert_equal("wilma", list.find("wilma").value())
+assert_equal(["fred", "wilma"], list.values())
+
+list = List.new
+list.add("fred")
+list.add("wilma")
+list.add("betty")
+list.add("barney")
+assert_equal(["fred", "wilma", "betty", "barney"], list.values())
+
+list.delete(list.find("wilma"))
+assert_equal(["fred", "betty", "barney"], list.values())
+
+list.delete(list.find("barney"))
+assert_equal(["fred", "betty"], list.values())
+
+list.delete(list.find("fred"))
+assert_equal(["betty"], list.values())
+
+list.delete(list.find("betty"))
+assert_equal([], list.values())
+
+Para la kata, donde la idea es practicar, vamos a escribir 3 implementaciones de la lista:
+Una lista enlazada (cada nodo tiene una referencia al siguiente nodo)
+Una lista doblemente enlazada (cada nodo tiene una referencia a los nodos anterior y siguiente)
+Cualquier otra implementación a tu elección, salvo que no debes utilizar referencias (punteros) para almacenar las relaciones entre los nodos de la lista.
+
+Obviamente, no debes utilizar clases de tu lenguaje de programación ya existentes, como implementaciones de tus propias listas :)
+Objetivos
+
+No hay nada mágico o sorprendente en las implementaciones de las listas, pero hay un buen número de condiciones particulares a su alrededor. Por ejemplo, para eliminar de una lista enlazada simple, tendrás que lidiar con el caso particular de eliminar el primer elemento de la lista.
+
+Para esta kata, concéntrate en la manera de eliminar el mayor número de estas condiciones particulares en la manera de lo posible. Luego pregúntate: 
+¿Es código resultante que contiene los menos casos particulares posibles más fácil de leer y mantener?
+¿Cómo de fácil ha sido eliminar estos casos particulares? 
+¿Existe algún lugar concreto e interesante cuando se trata de simplificar el código?
+Fuente original: http://codekata.pragprog.com/2007/01/kata_twenty_one.html
