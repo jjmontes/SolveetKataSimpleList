@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KSLTests", "KSLTests\KSLTests.csproj", "{84656942-3E24-48FB-AFFB-0C3B5E5EF801}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KSL", "KSL\KSL.csproj", "{849C4AEF-14B0-49DA-8072-6E012B5E0F9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84656942-3E24-48FB-AFFB-0C3B5E5EF801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84656942-3E24-48FB-AFFB-0C3B5E5EF801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84656942-3E24-48FB-AFFB-0C3B5E5EF801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84656942-3E24-48FB-AFFB-0C3B5E5EF801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{849C4AEF-14B0-49DA-8072-6E012B5E0F9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{849C4AEF-14B0-49DA-8072-6E012B5E0F9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{849C4AEF-14B0-49DA-8072-6E012B5E0F9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{849C4AEF-14B0-49DA-8072-6E012B5E0F9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = KSLTests\KSLTests.csproj
+	EndGlobalSection
+EndGlobal
